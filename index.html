@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI calculator">
+  <meta name="author" content="Yogesh Mokashi">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI calculator</h1>
+    <h2>Coursera project submission</h2>
+    <p>Yogesh Mokashi<br/>R Developer</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Body Mass Index (BMI)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Body Mass Index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.  The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value.</p>
+
+<h3>BMI Categories:</h3>
+
+<ul>
+<li>Underweight = &lt; 18.5</li>
+<li>Normal weight = 18.5 - 24.9 </li>
+<li>Overweight = 25 - 29.9 </li>
+<li>Obese = BMI of 30 or greater</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Details of BMI calculator</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Shiny app on next page calculates BMI and BMI category.  </p>
+
+<p>Please follow given instructions:</p>
+
+<ol>
+<li>Enter your weight and height using standard measures. i.e. weight in lbs; height in feet and inches. </li>
+<li>Click &quot;Compute BMI&quot; button. Your BMI and Category will appear as output. </li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>BMI calculator</h2>
+  </hgroup>
+  <article data-timings="">
+    <div class="row-fluid">
+  <div class="col-sm-4">
+    <form class="well">
+      <div class="form-group shiny-input-container" style="width: 400px;">
+        <label for="weight">Body weight (lbs)</label>
+        <input id="weight" type="number" class="form-control" value="0"/>
+      </div>
+      <p> </p>
+      <h3>Height (feet, inches): </h3>
+      <div class="form-group shiny-input-container" style="width: 100px;">
+        <label for="heightfeet">feet</label>
+        <input id="heightfeet" type="number" class="form-control" value="0"/>
+      </div>
+      <div class="form-group shiny-input-container" style="width: 100px;">
+        <label for="heightinch">inches</label>
+        <input id="heightinch" type="number" class="form-control" value="0"/>
+      </div>
+      <p> </p>
+      <div>
+        <button type="submit" class="btn btn-primary" style="width: 150px;">
+          <strong>Compute BMI</strong>
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="col-sm-8">
+    <p> </p>
+    <h3>Calculated BMI and Category: </h3>
+    <pre id="bmictg" class="shiny-text-output"></pre>
+    <span id="bmictg" class="shiny-html-output"></span>
+  </div>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Based on height and weight, one can find out BMI and category (whether normal weight or overweight).  Knowing BMI helps one to take corrective actions like exercise, diet plan etc. </p>
+
+<p>Thanks for your time! </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Body Mass Index (BMI)'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Details of BMI calculator'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='BMI calculator'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <script src="shared/shiny.js" type="text/javascript"></script>
+  <script src="shared/slider/js/jquery.slider.min.js"></script>
+  <script src="shared/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
